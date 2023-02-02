@@ -1,0 +1,19 @@
+img {
+    height: 250px;
+}
+
+p {
+    font-size: 16px;
+    max-width: 50%;
+}
+
+body {
+    text-align: center;
+}
+
+.nasaWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
