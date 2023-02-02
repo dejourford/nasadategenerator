@@ -11,10 +11,10 @@ dateBtn.addEventListener('click', getImage)
 
 
 function getImage() {
-    console.log('nothing yet')
-
+    const userDate =  document.querySelector('#userDate').value
+    console.log(userDate)
     // fetch nasa api
-    fetch('https://api.nasa.gov/planetary/apod?api_key=UIJQ1JX6609xd4NrstCSef75F1F8N0N6u23UFxS1')
+    fetch(`https://api.nasa.gov/planetary/apod?api_key=UIJQ1JX6609xd4NrstCSef75F1F8N0N6u23UFxS1&date=${userDate}`)
     .then( response => response.json())
     .then (data => {
         console.log(data)
